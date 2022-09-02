@@ -1,0 +1,70 @@
+# Project: C大程大作业
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = exceptio.o genlib.o graphics.o imgui.o random.o simpio.o strlib.o Events.o Init.o Main.o Menu.o MenuFunction.o SaveAndOpen.o StringFunction.o TextEditor.o
+LINKOBJ  = exceptio.o genlib.o graphics.o imgui.o random.o simpio.o strlib.o Events.o Init.o Main.o Menu.o MenuFunction.o SaveAndOpen.o StringFunction.o TextEditor.o
+LIBS     = -L"F:/Basic_Experiment_Softwares/Dev-Cpp/MinGW64/lib" -L"F:/Basic_Experiment_Softwares/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -lwinmm -mwindows
+INCS     = -I"F:/Basic_Experiment_Softwares/Dev-Cpp/MinGW64/include" -I"F:/Basic_Experiment_Softwares/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"F:/Basic_Experiment_Softwares/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"F:/Basic_Experiment_Softwares/Dev-Cpp/MinGW64/include" -I"F:/Basic_Experiment_Softwares/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"F:/Basic_Experiment_Softwares/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"F:/Basic_Experiment_Softwares/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = C大程大作业.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+exceptio.o: exceptio.c
+	$(CC) -c exceptio.c -o exceptio.o $(CFLAGS)
+
+genlib.o: genlib.c
+	$(CC) -c genlib.c -o genlib.o $(CFLAGS)
+
+graphics.o: graphics.c
+	$(CC) -c graphics.c -o graphics.o $(CFLAGS)
+
+imgui.o: imgui.c
+	$(CC) -c imgui.c -o imgui.o $(CFLAGS)
+
+random.o: random.c
+	$(CC) -c random.c -o random.o $(CFLAGS)
+
+simpio.o: simpio.c
+	$(CC) -c simpio.c -o simpio.o $(CFLAGS)
+
+strlib.o: strlib.c
+	$(CC) -c strlib.c -o strlib.o $(CFLAGS)
+
+Events.o: Events.c
+	$(CC) -c Events.c -o Events.o $(CFLAGS)
+
+Init.o: Init.c
+	$(CC) -c Init.c -o Init.o $(CFLAGS)
+
+Main.o: Main.c
+	$(CC) -c Main.c -o Main.o $(CFLAGS)
+
+Menu.o: Menu.c
+	$(CC) -c Menu.c -o Menu.o $(CFLAGS)
+
+MenuFunction.o: MenuFunction.c
+	$(CC) -c MenuFunction.c -o MenuFunction.o $(CFLAGS)
+
+SaveAndOpen.o: SaveAndOpen.c
+	$(CC) -c SaveAndOpen.c -o SaveAndOpen.o $(CFLAGS)
+
+StringFunction.o: StringFunction.c
+	$(CC) -c StringFunction.c -o StringFunction.o $(CFLAGS)
+
+TextEditor.o: TextEditor.c
+	$(CC) -c TextEditor.c -o TextEditor.o $(CFLAGS)
