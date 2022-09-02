@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="libgraphics头文件">
+      <UniqueIdentifier>{46de531b-f2dc-457f-9c89-58536a5e0fef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libgraphics源文件">
+      <UniqueIdentifier>{e0bab417-30d0-4bee-9420-678330668a0c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="exception.h">
+      <Filter>libgraphics头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="extgraph.h">
+      <Filter>libgraphics头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gcalloc.h">
+      <Filter>libgraphics头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="genlib.h">
+      <Filter>libgraphics头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics.h">
+      <Filter>libgraphics头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui.h">
+      <Filter>libgraphics头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="random.h">
+      <Filter>libgraphics头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="simpio.h">
+      <Filter>libgraphics头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="strlib.h">
+      <Filter>libgraphics头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Init.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TextEditor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Events.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SaveAndOpen.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LineString.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StringFunction.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuFunction.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="exceptio.c">
+      <Filter>libgraphics源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="genlib.c">
+      <Filter>libgraphics源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics.c">
+      <Filter>libgraphics源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui.c">
+      <Filter>libgraphics源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="random.c">
+      <Filter>libgraphics源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="simpio.c">
+      <Filter>libgraphics源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="strlib.c">
+      <Filter>libgraphics源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Init.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TextEditor.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Events.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveAndOpen.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="StringFunction.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuFunction.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C大程大作业1.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="mhz.ico" />
+  </ItemGroup>
+</Project>
